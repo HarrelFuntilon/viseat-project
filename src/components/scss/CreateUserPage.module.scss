@@ -1,0 +1,29 @@
+.wrapper {
+  border: 1px solid red;
+  height: 100vh;
+}
+
+.wrapper_container {
+  padding: 2em;
+  width: 35%;
+  background-color: #fafafa;
+  border-radius: 10px;
+
+  .title {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  input {
+    border: 1px solid gray;
+    margin: 0.2em;
+    padding: 0.4em;
+    width: 100%;
+  }
+
+  .buttons {
+    margin: 0.3em;
+    width: 150px;
+  }
+}
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";

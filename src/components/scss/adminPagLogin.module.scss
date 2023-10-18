@@ -1,0 +1,63 @@
+@import "../../custom.scss";
+
+.wrapper {
+    height: 100vh;
+}
+
+.login_container {
+    height: 50vh;
+    width: auto;
+    background-color: #fe3d3d;
+    padding: 3em;
+}
+.input_container {
+    padding: 10px;
+    margin: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .inputText {
+        height: 5vh;
+        width: 100%;
+        padding: 0.5em;
+        font-size: 1em;
+        font-family: Inter;
+        margin: 3px;
+    }
+}
+
+.title {
+    font-size: 5em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.subtitle {
+    font-size: 2.3em;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+.btn {
+    font-family: Inter !important;
+    font-weight: 600 !important;
+    color: #fe3d3d !important;
+    background-color: white !important;
+    text-transform: uppercase !important;
+    padding: 10px !important;
+    font-size: 1.3em !important;
+    width: 40% !important;
+}
+
+@media screen and (max-width: 1366px) {
+    .login_container {
+        height: 60vh;
+    }
+}
+
+// Bootstrap Import
+@import "../../../node_modules/bootstrap/scss/bootstrap";
