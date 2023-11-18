@@ -1,12 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-const SecondSection = () => {
+const SecondSection = (): any => {
   return (
     <>
       <div className="container-fluid">
         <div className="row">
           <div className="col-12 bg-warning">
-            <h1 id="benefits" className="mainTitle p-3">BENEFITS</h1>
+            <h1 id="benefits" className="mainTitle p-3">
+              BENEFITS
+            </h1>
           </div>
         </div>
       </div>
@@ -45,7 +47,7 @@ const SecondSection = () => {
             </p>
             <div className="container d-flex justify-content-center p-3">
               <Link to="pages/explore">
-              <h1 className="btn btn-look">Look to EXPLORE</h1>
+                <h1 className="btn btn-look">Look to EXPLORE</h1>
               </Link>
             </div>
           </div>

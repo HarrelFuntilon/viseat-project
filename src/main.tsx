@@ -1,55 +1,60 @@
 // LIBRARIES
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./custom.css";
-import Indexpage from "./pages/Indexpage";
-import AdminPageLogin from "./pages/AdminPageLogin";
-import AdminPage from "./pages/AdminPage";
-import Promote from "./pages/Promote";
-import Explore from "./pages/Explore";
-import About from "./pages/About";
-import Inquire from "./pages/Inquire";
-import CreateUserPage from "./pages/CreateUserPage";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import './custom.css';
+import Indexpage from './pages/home/Indexpage';
+import AdminPageLogin from './pages/admin/AdminPageLogin';
+import AdminPage from './pages/admin/AdminPage';
+import Promote from './pages/home/Promote';
+import Explore from './pages/home/Explore';
+import About from './pages/home/About';
+import Inquire from './pages/home/Inquire';
+import CreateUserPage from './pages/admin/CreateUserPage';
+import TemplateTable from './components/TemplateTable';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Indexpage />,
   },
   {
-    path: "/pages/promote",
+    path: '/pages/promote',
     element: <Promote />,
   },
   {
-    path: "/pages/explore",
+    path: '/pages/explore',
     element: <Explore />,
   },
   {
-    path: "/pages/explore/inquire",
+    path: '/pages/explore/inquire',
     element: <Inquire />,
   },
   {
-    path: "/pages/about",
+    path: '/pages/about',
     element: <About />,
   },
   {
-    path: "/admin",
+    path: '/admin',
     element: <AdminPageLogin />,
   },
   {
-    path: "/admin/:adminpage",
+    path: '/admin/:adminpage',
     element: <AdminPage />,
+  },
+  {
+    path: '/admin/templatetable',
+    element: <TemplateTable />,
   },
 
   {
-    path: "/admin/adminpage/createUserPage",
+    path: '/admin/adminpage/createUserPage',
     element: <CreateUserPage />,
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </React.StrictMode>,
 );

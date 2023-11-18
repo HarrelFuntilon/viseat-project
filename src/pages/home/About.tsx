@@ -1,33 +1,33 @@
-import "../../dist/output.css";
-import Header from "../components/Header";
+import '../../../dist/output.css';
+import Header from '../../components/Header';
 
-const about = () => {
+const about = (): any => {
   return (
     <>
       <title>About the System</title>
-      {/*To start, first open the project directory
+      {/* To start, first open the project directory
       Then input the following command to make sure Tailwind CSS runs:
           npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
       */}
 
-      {/*Navbar*/}
+      {/* Navbar */}
       <Header />
 
       <main className="bg-AboutBGD bg-cover bg-no-repeat h-screen">
         <div className="bg-black bg-opacity-50 h-full">
           <div className="invisible mb-36">space</div>
-          {/*Main Grid*/}
+          {/* Main Grid */}
           <div className="mt-48 md:mt-0 md:grid grid-cols-2 ml-2 mr-2 md:ml-24 md:mr-24 gap-56">
-            {/*Mission & Vision*/}
+            {/* Mission & Vision */}
             <div className="grid grid-rows-2 gap-16">
               <div>
                 <h1 className="text-white font-bold text-2xl md:text-3xl uppercase">
                   mission
                 </h1>
                 <p className="text-white md:text-xl mt-2">
-                  Our mission is to give our customers a place to celebrate life’s
-                  special moments by offering the best food, service, and ambiance
-                  in Philippines.
+                  Our mission is to give our customers a place to celebrate
+                  life’s special moments by offering the best food, service, and
+                  ambiance in Philippines.
                 </p>
               </div>
               <div>
@@ -40,7 +40,7 @@ const about = () => {
                 </p>
               </div>
             </div>
-            {/*Contact*/}
+            {/* Contact */}
             <div className="grid grid-rows-4 gap-5 mt-16 md:mt-0">
               <h1 className="text-white font-bold uppercase text-2xl md:text-3xl">
                 where can you find us
@@ -73,7 +73,6 @@ const about = () => {
               </div>
             </div>
           </div>
-          
         </div>
       </main>
     </>

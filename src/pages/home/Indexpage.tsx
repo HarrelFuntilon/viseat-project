@@ -1,7 +1,7 @@
-import Header from "../components/Header";
-import FirstSection from "./FirstSection";
-import SecondSection from "./SecondSection";
-import ThirdSection from "./ThirdSection";
+import Header from '../../components/Header';
+import FirstSection from './FirstSection';
+import SecondSection from './SecondSection';
+import ThirdSection from './ThirdSection';
 
 const Indexpage = () => {
   return (

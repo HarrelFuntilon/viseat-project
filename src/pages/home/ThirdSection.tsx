@@ -1,7 +1,7 @@
-import ts from "../components/scss/ThirdSection.module.scss";
-import "../custom.scss";
+import ts from '../../components/scss/ThirdSection.module.css';
+import '../../custom.css';
 
-const ThirdSection = () => {
+const ThirdSection = (): any => {
   return (
     <>
       <div className="container-fluid p-0">
@@ -41,7 +41,7 @@ const ThirdSection = () => {
                       Suite 930 12292 Royal Extensions, Schummport, VA 13335
                     </p>
                     <h1
-                      style={{ textTransform: "uppercase", letterSpacing: "1" }}
+                      style={{ textTransform: 'uppercase', letterSpacing: '1' }}
                     >
                       Popular foods
                     </h1>
@@ -57,7 +57,7 @@ const ThirdSection = () => {
                         ESTIMATED PRICE: $0 - 1000
                       </div>
                       <div className={`${ts.address} col-6`}>
-                        PHONE NUMBER: +16595882484{" "}
+                        PHONE NUMBER: +16595882484{' '}
                       </div>
                     </div>
                   </div>

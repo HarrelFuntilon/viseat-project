@@ -1,22 +1,22 @@
-import Header from "../components/Header";
-import "../../dist/output.css";
-import { Link } from "react-router-dom";
-const explore = () => {
+import Header from '../../components/Header';
+import '../../../dist/output.css';
+import { Link } from 'react-router-dom';
+const explore = (): any => {
   return (
     <>
       <title>Explore Eateries</title>
       <link rel="stylesheet" href="../../dist/output.css" />
-      {/*To start, first open the project directory
+      {/* To start, first open the project directory
       Then input the following command to make sure Tailwind CSS runs:
           npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
   */}
-      {/*Navbar*/}
+      {/* Navbar */}
       <Header />
       <main className="bg-ExploreBGD">
         <div className="bg-black bg-opacity-50">
-          {/*space*/}
+          {/* space */}
           <div className="invisible">space</div>
-          {/*Greetings*/}
+          {/* Greetings */}
           <div className="ml-9 mt-36">
             <h1 className="uppercase text-white text-4xl md:text-8xl font-bold">
               Explore
@@ -29,10 +29,11 @@ const explore = () => {
               Savoury. Sweet. Drinks? Of Course!
             </p>
             <p className="text-gray-300 text-[10px]">
-              (Tip: Make sure to give them a call to check their operating hours)
+              (Tip: Make sure to give them a call to check their operating
+              hours)
             </p>
           </div>
-          {/*Inquire Button*/}
+          {/* Inquire Button */}
           <Link to="/pages/explore/inquire">
             <div className="fixed bottom-16 right-24 md:bottom-16 md:right-40">
               <button className="btn fixed bg-main-blue text-white border-main-blue hover:bg-blue-700 hover:border-blue-700 md:text-xl rounded-full pl-5 pr-5 md:pl-9 md:pr-9 normal-case font-normal">
@@ -40,9 +41,9 @@ const explore = () => {
               </button>
             </div>
           </Link>
-          {/*Start of List*/}
+          {/* Start of List */}
           <div className="w-full bg-white p-9 mt-48">
-            {/*Establishment 1*/}
+            {/* Establishment 1 */}
             <div className="grid md:grid-cols-2 md:grid-rows-4 gap-4">
               <img
                 src="../img/kyoto.jpg"
@@ -58,10 +59,10 @@ const explore = () => {
                 </p>
               </div>
               <p className="text-gray-500">
-                Kyo-to is a Japanese restaurant in the heart of Makati that offers
-                an authentic kaiseki dining experience. Kaiseki is a traditional
-                Japanese multi-course meal, so you can enjoy a wide variety of
-                flavorful dishes at Kyo-to.
+                Kyo-to is a Japanese restaurant in the heart of Makati that
+                offers an authentic kaiseki dining experience. Kaiseki is a
+                traditional Japanese multi-course meal, so you can enjoy a wide
+                variety of flavorful dishes at Kyo-to.
               </p>
               <div>
                 <h1 className="font-bold uppercase text-lg">popular foods:</h1>
@@ -82,7 +83,7 @@ const explore = () => {
               </div>
             </div>
             <hr className="mt-8 mb-8" />
-            {/*Establishment 2*/}
+            {/* Establishment 2 */}
             <div className="grid md:grid-cols-2 md:grid-rows-4 gap-4">
               <img
                 src="../img/metronome.jpg"
@@ -96,15 +97,15 @@ const explore = () => {
                 <p className="font-semibold">160 Bolanos St. Legazpi Village</p>
               </div>
               <p className="text-gray-500">
-                Metronome is a modern French restaurant by Chef Mike Calo, and if
-                you want to enjoy the best of French cuisine in a stylish and
+                Metronome is a modern French restaurant by Chef Mike Calo, and
+                if you want to enjoy the best of French cuisine in a stylish and
                 romantic setting then this is the place to be.
               </p>
               <div>
                 <h1 className="font-bold uppercase text-lg">popular foods:</h1>
                 <p className="text-gray-500">
                   Lobster Spaghettini, Beef Bourguignon, Steak Frites, L’ultime,
-                  Halibut{" "}
+                  Halibut{' '}
                 </p>
               </div>
               <div className="grid grid-cols-2 content-end">
@@ -120,7 +121,7 @@ const explore = () => {
               </div>
             </div>
             <hr className="mt-8 mb-8" />
-            {/*Establishment 3*/}
+            {/* Establishment 3 */}
             <div className="grid md:grid-cols-2 md:grid-rows-4 gap-4">
               <img
                 src="../img/wolfgang.jpg"
@@ -159,7 +160,7 @@ const explore = () => {
               </div>
             </div>
           </div>
-          {/*space*/}
+          {/* space */}
           <div className="mt-8 md:mt-28 invisible">space</div>
         </div>
       </main>

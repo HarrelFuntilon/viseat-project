@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import style from "../components/scss/adminPagLogin.module.css";
+import { Link } from 'react-router-dom';
+import style from '../../components/scss/adminPagLogin.module.css';
 
 const AdminPageLogin = () => {
   return (
@@ -36,7 +36,7 @@ const AdminPageLogin = () => {
             </div>
           </div>
           <div className="container d-flex align-item-center justify-content-center m-3">
-            <Link className={`${style.btn} btn`} to={"/admin/adminpage"}>
+            <Link className={`${style.btn} btn`} to={'/admin/adminpage'}>
               LOGIN
             </Link>
           </div>
